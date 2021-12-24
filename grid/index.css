@@ -1,0 +1,26 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "header header "
+    "aside content "
+    "aside content ";
+    gap: 1px;
+}
+
+.header{
+    background-color: aliceblue;
+    grid-area: header;
+}
+.aside{
+    background-color: greenyellow;
+    grid-area: aside;
+}
+.content{
+    background-color: bisque;
+    grid-area: content;
+}
+
+
